@@ -1,8 +1,8 @@
-import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { UserModel } from 'src/models/UserModel';
-import { environment } from 'src/environments/environment';
+import { HttpClient } from "@angular/common/http";
+import {IUserModel} from "../models/IUserModel";
+import {Observable} from "rxjs";
+import {environment} from "../environments/environments";
 
 @Injectable({
   providedIn: 'root'
@@ -10,20 +10,24 @@ import { environment } from 'src/environments/environment';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-  
-  public CreateNewUser(user: UserModel): Observable<UserModel> {
-    return this.http.post<UserModel>(`${environment.apiUrl}/User/CreateNewUser`, user);
+
+  public CreateNewUser(user: IUserModel) : Observable<IUserModel> {
+    return this.http.post<IUserModel>(`${environment.apiUrl}/User/CreateNewUser`, user);
   }
 
-  public GetAllUsers(): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>(`${environment.apiUrl}/User/GetAllUsers`);
+  public GetAllUsers(user: IUserModel) : Observable<IUserModel> {
+    return this.http.get<IUserModel>(`${environment.apiUrl}/User/GetAllUsers`)
   }
 
-  public UpdateUser(userId: number) : Observable<UserModel> {
-    return this.http.put<UserModel>(`${environment}/User/UpdateUser/${userId}`, userId);
+  public GetUserById(userId: number) : Observable<IUserModel> {
+    return this.http.get<IUserModel>(`${environment.apiUrl}/User/GetUserById/${userId}`);
   }
 
-  public DeleteUser(userId: number) : Observable<UserModel> {
-    return this.http.delete<UserModel>(`${environment.apiUrl}/User/DeleteUser/${userId}`);
+  public UpdateUser(userId: number, user: IUserModel) : Observable<IUserModel> {
+    return this.http.put<IUserModel>(`${environment.apiUrl}/User/UpdateUser/${userId}`, user);
+  }
+
+  public DeleteUser(userId: number) : Observable<IUserModel> {
+    return this.http.delete<IUserModel>(`${environment.apiUrl}/User/DeleteUser/${userId}`);
   }
 }

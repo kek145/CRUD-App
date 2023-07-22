@@ -35,6 +35,16 @@ namespace CRUD.API.Controllers
             return Ok(new { users });
         }
 
+        [HttpGet]
+        [Route("GetUserById/{userId:int}")]
+        public async Task<IActionResult> GetUserById(int userId)
+        {
+            var user = await _userService.GetUserByIdAsync(userId);
+            if (user == null!)
+                return NotFound("User is not found");
+            return Ok(new { user });
+        }
+
         [HttpPut]
         [Route("UpdateUser/{userId:int}")]
         public async Task<IActionResult> UpdateUser(UserEntity entity, int userId)
