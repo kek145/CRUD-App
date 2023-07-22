@@ -1,3 +1,8 @@
+using CRUD.BL.Implementations;
+using CRUD.BL.Interfaces;
+using CRUD.DAL.Interfaces;
+using CRUD.DAL.Repositories;
+using CRUD.Domain.Entity;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,6 +23,8 @@ namespace CRUD.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IBaseRepository<UserEntity>, UserRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
