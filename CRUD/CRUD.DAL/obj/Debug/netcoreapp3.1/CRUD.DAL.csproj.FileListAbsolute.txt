@@ -1,0 +1,12 @@
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\bin\Debug\netcoreapp3.1\CRUD.DAL.deps.json
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\bin\Debug\netcoreapp3.1\CRUD.DAL.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\bin\Debug\netcoreapp3.1\CRUD.DAL.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\bin\Debug\netcoreapp3.1\CRUD.Domain.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\bin\Debug\netcoreapp3.1\CRUD.Domain.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.csprojAssemblyReference.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.AssemblyInfoInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.AssemblyInfo.cs
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.csproj.CoreCompileInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.csproj.CopyComplete
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.DAL\obj\Debug\netcoreapp3.1\CRUD.DAL.pdb
