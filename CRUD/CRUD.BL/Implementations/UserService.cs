@@ -27,14 +27,14 @@ namespace CRUD.BL.Implementations
             return user;
         }
 
-        public async void DeleteUserAsync(int userId)
+        public async Task DeleteUserAsync(int userId)
         {
             await _userRepository.DeleteAsync(userId);
         }
 
-        public async Task<UserEntity> UpdateUserAsync(UserEntity entity)
+        public async Task<UserEntity> UpdateUserAsync(UserEntity entity, int userId)
         {
-            var user = await _userRepository.UpdateAsync(entity);
+            var user = await _userRepository.UpdateAsync(entity, userId);
             return user;
         }
 

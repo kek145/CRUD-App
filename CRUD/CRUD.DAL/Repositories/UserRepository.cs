@@ -19,7 +19,8 @@ namespace CRUD.DAL.Repositories
         public async Task CreateAsync(UserEntity entity)
         {
             var connection = new SqlConnection(_configuration.GetConnectionString("MSSQL"));
-            await connection.ExecuteAsync("INSERT INTO [Users](FirstName, LastName, Email) VALUES(@FName, @LName, @Email)", entity);
+            await connection.ExecuteAsync("INSERT INTO Users(FirstName, LastName, Email) VALUES(@FName, @LName, @Email)",
+                new { FName = entity.FirstName, LName = entity.LastName, Email = entity.Email });
         }
 
         public async Task<IEnumerable<UserEntity>> GetAllAsync()
@@ -45,10 +46,11 @@ namespace CRUD.DAL.Repositories
             await connection.ExecuteAsync("DELETE FROM [Users] WHERE UserId = @Id", new { Id = userId });
         }
 
-        public async Task<UserEntity> UpdateAsync(UserEntity entity)
+        public async Task<UserEntity> UpdateAsync(UserEntity entity, int userId)
         { 
             var connection = new SqlConnection(_configuration.GetConnectionString("MSSQL"));
-            await connection.ExecuteAsync("UPDATE [Users] SET FirstName = @FName, LastName = @LName, Email = @Email", entity);
+            await connection.ExecuteAsync("UPDATE [Users] SET FirstName = @FName, LastName = @LName, Email = @Email WHERE UserId = @Id", 
+                new {FName = entity.FirstName, LName = entity.LastName, Email = entity.Email, Id = userId});
 
             return entity;
         }

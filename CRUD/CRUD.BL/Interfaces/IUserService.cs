@@ -6,10 +6,10 @@ namespace CRUD.BL.Interfaces
 {
     public interface IUserService
     {
+        Task DeleteUserAsync(int userId);
         Task<IEnumerable<UserEntity>> GetAllUsersAsync();
         Task<UserEntity> GetUserByIdAsync(int userId);
-        void DeleteUserAsync(int userId);
-        Task<UserEntity> UpdateUserAsync(UserEntity entity);
         Task<UserEntity> CreateNewUserAsync(UserEntity entity);
+        Task<UserEntity> UpdateUserAsync(UserEntity entity, int userId);
     }
 }

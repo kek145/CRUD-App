@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CRUD.Domain.Entity;
 
 namespace CRUD.DAL.Interfaces
 {
@@ -11,8 +12,8 @@ namespace CRUD.DAL.Interfaces
 
         Task DeleteAsync(int userId);
 
-        Task<T> UpdateAsync(T entity);
         Task<IEnumerable<T>> GetAllAsync();
+        Task<T> UpdateAsync(T entity, int userId);
         Task<T> GetUserByIdAsync(int userId);
     }
 }
