@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GQLVRggtwy4j4qIj6/2jVE53jtT9vaK71pRkYGHsXFqeojw++dFJ+DhMGqk6K+JjoVJeOfFeNYHBICJmLQEkCA==",
+  "dgSpecHash": "yZHo6p3qdQyJwM+x1ENfQZYMg/KW+GSXfslIHP7XYSj09RiP5VQ1IInveMNRKydivg3V6O/dhleQ3CBBfx1IUA==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\CRUD-App\\CRUD\\CRUD.API\\CRUD.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\urabo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\urabo\\.nuget\\packages\\microsoft.openapi\\1.6.5\\microsoft.openapi.1.6.5.nupkg.sha512",
+    "C:\\Users\\urabo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\urabo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\urabo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\urabo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

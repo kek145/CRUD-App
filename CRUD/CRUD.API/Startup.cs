@@ -18,6 +18,7 @@ namespace CRUD.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -25,6 +26,8 @@ namespace CRUD.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
             
 
