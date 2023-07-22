@@ -1,8 +1,8 @@
-using CRUD.BL.Implementations;
 using CRUD.BL.Interfaces;
 using CRUD.DAL.Interfaces;
-using CRUD.DAL.Repositories;
 using CRUD.Domain.Entity;
+using CRUD.DAL.Repositories;
+using CRUD.BL.Implementations;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

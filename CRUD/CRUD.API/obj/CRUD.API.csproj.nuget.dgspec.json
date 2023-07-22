@@ -106,7 +106,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\GitHub\\CRUD-App\\CRUD\\CRUD.DAL\\CRUD.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\CRUD-App\\CRUD\\CRUD.DAL\\CRUD.DAL.csproj"
+              },
+              "D:\\GitHub\\CRUD-App\\CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
+                "projectPath": "D:\\GitHub\\CRUD-App\\CRUD\\CRUD.Domain\\CRUD.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

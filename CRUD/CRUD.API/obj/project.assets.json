@@ -752,6 +752,10 @@
       "CRUD.BL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CRUD.DAL": "1.0.0",
+          "CRUD.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CRUD.BL.dll": {}
         },
