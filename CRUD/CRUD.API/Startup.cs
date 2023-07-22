@@ -1,3 +1,4 @@
+using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
@@ -18,7 +19,10 @@ namespace CRUD.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Dapper crud", Version = "v1" });
+            });
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,10 +31,13 @@ namespace CRUD.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dapper crud V1");
+                });
             }
             
-
+            app.UseRouting();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
