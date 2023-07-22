@@ -8,10 +8,11 @@ namespace CRUD.DAL.Interfaces
     {
         Task CreateAsync(T entity);
 
-        Task<IEnumerable<T>> GetAllAsync();
 
         Task DeleteAsync(int userId);
 
         Task<T> UpdateAsync(T entity);
+        Task<IEnumerable<T>> GetAllAsync();
+        Task<T> GetUserByIdAsync(int userId);
     }
 }

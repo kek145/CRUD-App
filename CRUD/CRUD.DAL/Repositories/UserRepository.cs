@@ -30,6 +30,15 @@ namespace CRUD.DAL.Repositories
             return users;
         }
 
+        public async Task<UserEntity> GetUserByIdAsync(int userId)
+        {
+            var connection = new SqlConnection(_configuration.GetConnectionString("MSSQL"));
+            var user = await connection.QueryFirstOrDefaultAsync<UserEntity>("SELECT * FROM [Users] WHERE UserId = @Id",
+                new { Id = userId });
+
+            return user;
+        }
+
         public async Task DeleteAsync(int userId)
         {
             var connection = new SqlConnection(_configuration.GetConnectionString("MSSQL"));
