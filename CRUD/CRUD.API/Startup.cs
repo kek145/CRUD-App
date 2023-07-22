@@ -26,6 +26,7 @@ namespace CRUD.API
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IBaseRepository<UserEntity>, UserRepository>();
             services.AddControllers();
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Dapper crud", Version = "v1" });
@@ -41,6 +42,12 @@ namespace CRUD.API
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Dapper crud V1");
+                });
+                app.UseCors(builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
                 });
             }
             
