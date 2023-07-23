@@ -18,7 +18,7 @@ namespace CRUD.API.Controllers
 
         [HttpPost]
         [Route("CreateNewUser")]
-        public async Task<IActionResult> CreateNewUser(UserEntity entity)
+        public async Task<IActionResult> CreateNewUser([FromBody] UserEntity entity)
         {
             var user = await _userService.CreateNewUserAsync(entity);
             return Ok(new { user });
@@ -47,10 +47,10 @@ namespace CRUD.API.Controllers
 
         [HttpPut]
         [Route("UpdateUser/{userId:int}")]
-        public async Task<IActionResult> UpdateUser(UserEntity entity, int userId)
+        public async Task<IActionResult> UpdateUser([FromBody] UserEntity entity, int userId)
         {
             var user = await _userService.UpdateUserAsync(entity, userId);
-            return Ok(new { user });
+            return Ok(user);
         }
 
         [HttpDelete]

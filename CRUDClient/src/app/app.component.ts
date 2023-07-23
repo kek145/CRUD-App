@@ -17,6 +17,13 @@ export class AppComponent implements OnInit {
     email: ""
   };
 
+  selectedUser: IUserModel = {
+    userId: 0,
+    firstName: "",
+    lastName: "",
+    email: ""
+  }
+
   items: IUserModel[] = [];
 
   ngOnInit() {
@@ -52,6 +59,37 @@ export class AppComponent implements OnInit {
       }
     );
   }
+
+  selectedByUserId(userId: number) :void {
+    this.userService.GetUserById(userId).subscribe(
+      (response: IUserModel) => {
+        this.selectedUser = response;
+      },
+      (error) => {
+        alert("Error");
+      }
+    );
+  }
+
+  updateUser(user: IUserModel) : void {
+    this.userService.UpdateUser(this.selectedUser.userId, user).subscribe(
+      (response) => {
+        alert("Successfully");
+        this.userService.GetAllUsers().subscribe(
+          (response: IUserModel[]) => {
+            this.items = response;
+          },
+          (error: any) => {
+            console.log(error.Message)
+          }
+        );
+      },
+      (error) => {
+        alert("Error");
+      }
+    );
+  }
+
   removeUser(userId: number) : void {
     this.userService.DeleteUser(userId).subscribe(
       (response) =>{

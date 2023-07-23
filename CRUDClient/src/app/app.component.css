@@ -13,7 +13,7 @@ form{
 }
 
 .table{
-  margin-top: 100px;
+  margin-top: 25px;
   margin-left: -150px;
 }
 
@@ -24,12 +24,19 @@ form{
 }
 
 #warning{
-  width: 350px;
+  width: 500px;
   margin: 0 auto;
   margin-top: 10px;
+  margin-left: 0px;
 }
 
 #update{
+  margin-top: 10px;
+}
+
+#button{
+  width: 350px;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
