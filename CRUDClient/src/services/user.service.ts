@@ -15,8 +15,8 @@ export class UserService {
     return this.http.post<IUserModel>(`${environment.apiUrl}/User/CreateNewUser`, user);
   }
 
-  public GetAllUsers(user: IUserModel) : Observable<IUserModel> {
-    return this.http.get<IUserModel>(`${environment.apiUrl}/User/GetAllUsers`)
+  public GetAllUsers() : Observable<IUserModel[]> {
+    return this.http.get<IUserModel[]>(`${environment.apiUrl}/User/GetAllUsers`)
   }
 
   public GetUserById(userId: number) : Observable<IUserModel> {

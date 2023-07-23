@@ -32,7 +32,7 @@ namespace CRUD.API.Controllers
             if (users == null!)
                 return NotFound("Users is not found!");
 
-            return Ok(new { users });
+            return Ok(users);
         }
 
         [HttpGet]
@@ -42,7 +42,7 @@ namespace CRUD.API.Controllers
             var user = await _userService.GetUserByIdAsync(userId);
             if (user == null!)
                 return NotFound("User is not found");
-            return Ok(new { user });
+            return Ok(user);
         }
 
         [HttpPut]
