@@ -6,7 +6,6 @@ CRUD FullStack application (.NET Core 3.1 &amp; Angular 16)
   1) C#
   2) Dapper
   3) MS SQL Server
-  4) Entityframework Core
   5) ASP.NET Core Web API
 
 - Frontend
