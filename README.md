@@ -16,3 +16,5 @@ CRUD FullStack application (.NET Core 3.1 &amp; Angular 16)
 
 - Tools
   1) Git
+  2) GitHub
+  3) Docker
