@@ -1,0 +1,9 @@
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\bin\Debug\netcoreapp3.1\CRUD.Domain.deps.json
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\bin\Debug\netcoreapp3.1\CRUD.Domain.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\bin\Debug\netcoreapp3.1\CRUD.Domain.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.csprojAssemblyReference.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.AssemblyInfoInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.AssemblyInfo.cs
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.csproj.CoreCompileInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.Domain\obj\Debug\netcoreapp3.1\CRUD.Domain.pdb

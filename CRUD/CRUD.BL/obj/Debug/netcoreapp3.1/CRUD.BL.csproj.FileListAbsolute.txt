@@ -1,0 +1,14 @@
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.BL.deps.json
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.BL.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.BL.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.DAL.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.Domain.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.DAL.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\bin\Debug\netcoreapp3.1\CRUD.Domain.pdb
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.csprojAssemblyReference.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.AssemblyInfoInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.AssemblyInfo.cs
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.csproj.CoreCompileInputs.cache
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.csproj.CopyComplete
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.dll
+D:\GitHub\CRUD-App\CRUD\CRUD.BL\obj\Debug\netcoreapp3.1\CRUD.BL.pdb

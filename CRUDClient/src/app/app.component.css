@@ -1,0 +1,47 @@
+.container{
+  padding-top: 10px;
+  padding-left: 400px;
+}
+form{
+  width: 500px;
+  height: 250px;
+  display: flex;
+  padding-top: 25px;
+  border-radius: 10px;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.table{
+  margin-top: 25px;
+  margin-left: -150px;
+}
+
+.input-width{
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#warning{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+#update{
+  margin-top: 10px;
+}
+
+#button{
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.btn-primary{
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
