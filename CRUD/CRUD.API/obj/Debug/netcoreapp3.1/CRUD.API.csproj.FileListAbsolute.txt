@@ -58,8 +58,3 @@ D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\CRUD.Domain.dll
 D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\CRUD.BL.pdb
 D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\CRUD.DAL.pdb
 D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\CRUD.Domain.pdb
-D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\out\web.config
-D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\out\appsettings.Development.json
-D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\out\appsettings.json
-D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\out\CRUD.API.deps.json
-D:\GitHub\CRUD-App\CRUD\CRUD.API\bin\Debug\netcoreapp3.1\out\CRUD.API.runtimeconfig.json

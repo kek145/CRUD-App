@@ -50,7 +50,7 @@ namespace CRUD.API
                         .AllowAnyMethod();
                 });
             }
-            
+
             app.UseRouting();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

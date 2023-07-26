@@ -25,6 +25,17 @@ namespace CRUD.API.Controllers
         }
 
         [HttpGet]
+        [Route("GetAll")]
+        public IActionResult GetAll()
+        {
+            var users = new[]
+            {
+                new { Name = "Yurii" }
+            };
+            return Ok(users);
+        }
+        
+        [HttpGet]
         [Route("GetAllUsers")]
         public async Task<IActionResult> GetAllUsers()
         {
